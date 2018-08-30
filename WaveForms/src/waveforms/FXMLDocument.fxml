@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="500.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="waveforms.FXMLDocumentController">
+   <children>
+      <LineChart fx:id="chart" prefHeight="352.0" prefWidth="640.0" title="Adding waveforms">
+        <xAxis>
+          <NumberAxis lowerBound="0.0" side="BOTTOM" upperBound="10.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="bCalculate" layoutX="364.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="106.0" text="Calculate" />
+      <TextField fx:id="coefV1" layoutX="57.0" layoutY="357.0" prefHeight="27.0" prefWidth="42.0" promptText="5" />
+      <Label layoutX="28.0" layoutY="360.0" prefHeight="20.0" prefWidth="29.0" text="v1 =" />
+      <TextField fx:id="pi1" layoutX="174.0" layoutY="359.0" prefHeight="27.0" prefWidth="35.0" promptText="3" />
+      <Label layoutX="210.0" layoutY="362.0" prefHeight="20.0" prefWidth="21.0" text=")" />
+      <Label layoutX="210.0" layoutY="397.0" prefHeight="20.0" prefWidth="10.0" text=")" />
+      <TextField fx:id="pi2" layoutX="174.0" layoutY="395.0" prefHeight="27.0" prefWidth="35.0" promptText="1" />
+      <Label layoutX="28.0" layoutY="397.0" prefHeight="20.0" prefWidth="29.0" text="v2 =" />
+      <TextField fx:id="coefV2" layoutX="57.0" layoutY="394.0" prefHeight="27.0" prefWidth="42.0" promptText="7" />
+      <Label fx:id="lResult" layoutX="28.0" layoutY="444.0" prefHeight="20.0" prefWidth="320.0" text="vR =" />
+      <TextArea editable="false" layoutX="278.0" layoutY="354.0" prefHeight="63.0" prefWidth="355.0" text="Calculate resultant waveform given two inputs with &#10;same frequency, e.g. voltages, sound waves, etc." />
+      <Label layoutX="99.0" layoutY="361.0" prefHeight="20.0" prefWidth="75.0" text="sin(wt ± pi /" />
+      <Label layoutX="99.0" layoutY="397.0" prefHeight="20.0" prefWidth="75.0" text="sin(wt ± pi /" />
+   </children>
+</AnchorPane>

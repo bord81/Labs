@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="WaveForms.jnlp">
+  <information>
+    <title>WaveForms</title>
+    <vendor>md311</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="WaveForms.jar" size="4965" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="waveforms.WaveForms"  name="WaveForms" />
+  <update check="always"/>
+</jnlp>
